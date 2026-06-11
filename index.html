@@ -61,7 +61,8 @@
             z-index: 1;
             opacity: 0.12;
             pointer-events: none;
-            will-change: transform; /* Hint to browser to leverage GPU context layers */
+            will-change: transform;
+            contain: strict; /* Completely blocks background paint cycles from checking your text cards */
         }
 
         .matrix-icon-particle {
@@ -514,15 +515,15 @@
             </div>
             <div class="video-stack">
                 <div class="video-container-169">
-                    <iframe src="https://www.youtube.com/embed/MUyvJ8V7O_0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/MUyvJ8V7O_0" title="YouTube video player" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div class="shorts-grid">
                     <div class="shorts-container-916">
-                        <iframe src="https://www.youtube.com/embed/glEWX1QxLUg" title="YouTube Short player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/glEWX1QxLUg" title="YouTube Short player" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="shorts-container-916">
-                        <iframe src="https://www.youtube.com/embed/eBPucaapCs4" title="YouTube Short player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/eBPucaapCs4" title="YouTube Short player" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
